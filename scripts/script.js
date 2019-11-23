@@ -1,9 +1,13 @@
-$(document).ready(function(){
-	console.log("hello world");
+$(document).ready(function(){	
+	getPartial("home.html");
+});
+
+function getPartial(fileName)
+{
 	$.ajax({
-		url: "partials/home.html", 
+		url: "partials/" + fileName, 
 		success: function(result){
-		    $("#div1").html(result);
+		    $(result).insertBefore("hr");
 		}
 	});
-});
+}
