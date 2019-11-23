@@ -1,13 +1,18 @@
 $(document).ready(function(){	
-	getPartial("home.html");
+	getPartial("partials/home.html");
+	$("a.internal").click(function(){
+		getPartial($(this).attr("href"));
+		return false;
+	});
 });
 
-function getPartial(fileName)
+function getPartial(path)
 {
 	$.ajax({
-		url: "partials/" + fileName, 
+		url: path, 
 		success: function(result){
-		    $(result).insertBefore("hr");
+			$("#partial-content").empty();
+		    $(result).appendTo("#partial-content");
 		}
 	});
 }
