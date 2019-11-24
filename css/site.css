@@ -12,10 +12,20 @@ body {
     display: block;
 }
 
+
+#bioimage{
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
 .item.active h1, h2 {
     color: #d9edf7;    
 }
 
+#partial-content{
+    margin:auto;
+}
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
