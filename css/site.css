@@ -23,6 +23,10 @@ img {
     color: #d9edf7;    
 }
 
+.left
+{
+    text-align: left;
+}
 #partial-content{
     margin-top: 15px;
 }
@@ -53,10 +57,29 @@ img {
     align-content: center;
 }
 
+.screenshot {
+    width: 1200px;
+}
+
+.modal-dialog
+{
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 1240)
+{
+    .screenshot{
+        width:  700px;
+    }
+}
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
         display: none;
+    }
+    .screenshot{
+        width: 500px;
     }
 }

@@ -7,6 +7,57 @@
         <h3>Fire Training Portal</h3>
         <p>The Fire Training Portal is a scheduling and record keeping system for the training division of the St Catharines Fire Department. The portal is an ASP.NET web application using the MVC design pattern and Entity Framework. It was developed to replace an existing system using MS Access that was no longer fit for purpose.</p>
         <p><b>Skill Used: C#, .NET Framework, Entity Framework, SQL Server, HTML/CSS, jQuery</b></p>
+        <p><button type="button" class="btn-link" data-toggle="modal" data-target="#fireModal">View Images</button></p>
+        <div id="fireModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Fire Training Portal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="fireCarousel" class="carousel slide" data-ride="carousel">  
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>  
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/fire1.png" class="screenshot"/>
+                                </div>
+                                <div class="item">
+                                    <img src="images/fire2.png" class="screenshot"/>
+                                </div>
+                                <div class="item">
+                                    <img src="images/fire3.png"  class="screenshot"/>
+                                </div>
+                                <div class="item">
+                                    <img src="images/fire4.png"  class="screenshot"/>
+                                </div>
+                            </div>  
+                            <a class="left carousel-control" href="#fireCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#fireCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>                    
+                    <div class="modal-footer">      
+                        <div class="col-md-6 left">
+                            <span>Names redacted for privacy.</span>                  
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <hr />

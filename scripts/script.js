@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 function getPartial(path)
 {
-	$.ajax({
+	$.ajax({		
 		url: path, 
 		success: function(result){
 			$("#partial-content").empty();
