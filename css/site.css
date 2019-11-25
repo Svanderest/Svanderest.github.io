@@ -23,6 +23,18 @@ img {
     color: #d9edf7;    
 }
 
+.carousel-caption {
+    right:5%;
+    left: 5%;
+    top:25%;
+}
+
+.carousel-caption h1{
+    font-size: 110px;
+    font-family: 'times new roman', times, serif;
+    font-style: italic;
+}
+
 .left
 {
     text-align: left;
