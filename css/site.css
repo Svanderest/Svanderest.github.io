@@ -9,6 +9,18 @@ img {
     margin: auto;
     display: block;
 }
+.big-image{
+    width: 75%;
+}
+
+.small-image{
+    margin-top:10px;
+}
+
+.yrn{
+    color: rgb(23,54,153);
+}
+
 #banner {    
     width: 100%;
     height: 80vh;
