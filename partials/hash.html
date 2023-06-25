@@ -1,9 +1,8 @@
 <div class="col--md-6">
-  <span id="output"></span>
+  <input type='password' id='pwd-input'/>
+  <button type='button' id='btn-copy'>Copy</button>
 </div>
 <script>
-const text =
-  "An obscure body in the S-K System, your majesty. The inhabitants refer to it as the planet Earth.";
 
 async function digestMessage(message) {
   const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
@@ -15,8 +14,11 @@ async function digestMessage(message) {
   return hashHex;
 }
 
-digestMessage(text).then((digestHex) => { 
-  console.log(digestHex);
-  document.getElementById('output').textContent = digestHex;
-});
+document.getElementById('output').onclick = function() {
+  let text = document.getElementById('pwd-input').textContent;  
+  digestMessage(text).then((digestHex) => { 
+    console.log(digestHex);    
+    navigator.clipboard.writeText(digestHex);    
+  });
+}  
 </script>
