@@ -14,8 +14,8 @@ async function digestMessage(message) {
   return hashHex;
 }
 
-document.getElementById('output').onclick = function() {
-  let text = document.getElementById('pwd-input').textContent;  
+document.getElementById('btn-copy').onclick = function() {
+  let text = document.getElementById('pwd-input').value;  
   digestMessage(text).then((digestHex) => { 
     console.log(digestHex);    
     navigator.clipboard.writeText(digestHex);    
